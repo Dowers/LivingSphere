@@ -1,88 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Living Sphere</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Living Sphere</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
 
-  <body>
-    <section class="hero">
-      <div class="experience"></div>
-    </section>
+	<body>
+		<section class="hero">
+			<div class="experience"></div>
+		</section>
 
-    <section class="section" id="home">
-      <div class="sec-title main-title">Living Sphere</div>
-      <div class="text second-title">Use your voice</div>
-    </section>
+		<section class="section" id="home">
+			<div class="sec-title main-title">Living Sphere</div>
+			<div class="text second-title">Use your voice</div>
+		</section>
 
-    <section class="section" id="about">
-      <div class="grid">
-        <div class="sec-title left-title">Welcome!</div>
-        <div class="text left-text reading-text">
-          <br /><br />
-          This project was build using ThreeJS and custom GLSL Shaders. To edit
-          the Sphere and give it more of your own flair please add #debug to the
-          end of the domain, doing this will allow a control panel to appear on
-          the right.
-          <br /><br />
+		<section class="section" id="about">
+			<div class="grid">
+				<div class="sec-title left-title">Welcome!</div>
+				<div class="text left-text reading-text">
+					<br /><br />
+					This project was build using ThreeJS and custom GLSL Shaders. To edit
+					the Sphere and give it more of your own flair please add #debug to the
+					end of the domain, doing this will allow a control panel to appear on
+					the right.
+					<br /><br />
 
-          <br /><br />
-          Who am I?
-          <br /><br />
-          My name is Jamie Dowers and I am a creative software developer with an
-          interest in creating interactive experiences using the latest
-          front-end technologies. <br /><br />
-          I have a Bachelors in ICT with a double major in Web/Mobile
-          Development and Software Engineering and was awarded the Best Software
-          Developer Award for outstanding achievement. I won the Robert Walters'
-          Nation-wide Hackathon in 2020. I also love learning about new
-          technologies and creating web based projects that seem impossible.
-          <br /><br />
-          Currently I am based in the Lower North Island of New Zealand.
-          <br /><br />
-          To get in touch, please email me at
-          <a href="mailto://Dowers.Dev@Gmail.com">Dowers.Dev@Gmail.com</a>
-        </div>
-      </div>
-    </section>
+					<br /><br />
+					Who am I?
+					<br /><br />
+					My name is Jamie Dowers and I am a creative software developer with an
+					interest in creating interactive experiences using the latest
+					front-end technologies. <br /><br />
+					I have a Bachelors in ICT with a double major in Web/Mobile
+					Development and Software Engineering and was awarded the Best Software
+					Developer Award for outstanding achievement. I won the Robert Walters'
+					Nation-wide Hackathon in 2020.
+					<br /><br />
+					Currently I am based in the Lower North Island of New Zealand.
+					<br /><br />
+					To get in touch, please email me at
+					<a href="mailto://Dowers.Dev@Gmail.com">Dowers.Dev@Gmail.com</a>
+				</div>
+			</div>
+		</section>
 
-    <script>
-      function myFunction() {
-        var x = document.getElementById("myNavbar");
-        if (x.className === "navbar") {
-          x.className += " responsive";
-        } else {
-          x.className = "navbar";
-        }
-      }
+		<script>
+			function myFunction() {
+				var x = document.getElementById('myNavbar');
+				if (x.className === 'navbar') {
+					x.className += ' responsive';
+				} else {
+					x.className = 'navbar';
+				}
+			}
 
-      var acc = document.getElementsByClassName("accordion");
+			var acc = document.getElementsByClassName('accordion');
 
-      for (let i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function () {
-          for (let j = 0; j < acc.length; j++) {
-            acc[j].classList.remove("active");
-            if (j != i) {
-              acc[j].nextElementSibling.style.maxHeight = null;
-            }
-          }
-          this.classList.add("active");
-          var panel = this.nextElementSibling;
-          if (panel.style.maxHeight) {
-            panel.style.maxHeight = null;
-          } else {
-            panel.style.maxHeight = panel.scrollHeight + "px";
-          }
-        });
-      }
-    </script>
-  </body>
+			for (let i = 0; i < acc.length; i++) {
+				acc[i].addEventListener('click', function () {
+					for (let j = 0; j < acc.length; j++) {
+						acc[j].classList.remove('active');
+						if (j != i) {
+							acc[j].nextElementSibling.style.maxHeight = null;
+						}
+					}
+					this.classList.add('active');
+					var panel = this.nextElementSibling;
+					if (panel.style.maxHeight) {
+						panel.style.maxHeight = null;
+					} else {
+						panel.style.maxHeight = panel.scrollHeight + 'px';
+					}
+				});
+			}
+		</script>
+	</body>
 </html>
